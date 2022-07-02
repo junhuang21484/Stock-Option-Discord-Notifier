@@ -42,11 +42,11 @@ Coming soon...
 ___
 
 ## To-Do List
-* [x] Better documentations
-* [x] Push an update for channel notifications
-* [x] Better help command
-* [x] Loggings
-* [x] More interactions and features
+* [ ] Better documentations
+* [ ] Push an update for channel notifications
+* [ ] Better help command
+* [ ] Loggings
+* [ ] More interactions and features
 
 Now please keep in mind that this project was built for me to get a taste of
 Hikari and the new Discord features. Please do no expect updates often, and
