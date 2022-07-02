@@ -1,0 +1,22 @@
+{
+    "TD_SETTING": {
+        "api_key": ""
+    },
+    "DISCORD_SETTING": {
+        "token": "",
+        "webhook": "",
+        "default_guilds": [
+            ""
+        ],
+        "notify_channels": [
+            ""
+        ],
+        "mention": {
+            "user": [""],
+            "role": [""]
+        }
+    },
+    "RUNTIME": {
+        "check_interval": 1
+    }
+}
