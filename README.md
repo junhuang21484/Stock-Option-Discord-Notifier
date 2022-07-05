@@ -32,6 +32,7 @@ step is a must for now, since channel notification is not out yet).
    2. Change `token` under `DISCORD_SETTING` to the bot token you obtain in step 2
    3. Change `webhook` under `DISCORD_SETTING` to the webhook you created in step 5
    4. Add the server id that you obtain in step 4 to the list of `default_guilds` under `DISCORD_SETTING`
+7. Make sure to `pip install requirements.txt` before starting the bot
 
 After this you will be all setup and can start the bot
 
