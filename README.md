@@ -45,8 +45,8 @@ ___
 ## To-Do List
 * [ ] Better documentations
 * [ ] Push an update for channel notifications
-* [ ] Better help command
-* [ ] Loggings
+* [x] Better help command
+* [ ] Logging
 * [ ] More interactions and features
 
 Now please keep in mind that this project was built for me to get a taste of

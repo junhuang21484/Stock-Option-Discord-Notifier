@@ -1,7 +1,11 @@
 import requests
 import json
 
-api_key = json.load(open("data/setting.json", "r", encoding="UTF-8"))["TD_SETTING"]["api_key"]
+api_key = [json.load(open("data/setting.json", "r", encoding="UTF-8"))["TD_SETTING"]["api_key"]]
+
+
+def reload_key():
+    api_key[0] = json.load(open("data/setting.json", "r", encoding="UTF-8"))["TD_SETTING"]["api_key"]
 
 
 def check_api_key(check_key: str) -> bool:
@@ -11,7 +15,7 @@ def check_api_key(check_key: str) -> bool:
 
 
 def get_stock_price(ticker: str):
-    req_url = f"https://api.tdameritrade.com/v1/marketdata/{ticker}/quotes?apikey={api_key}"
+    req_url = f"https://api.tdameritrade.com/v1/marketdata/{ticker}/quotes?apikey={api_key[0]}"
     req = requests.get(req_url)
     if req.status_code == 200 and req.json():
         stock_data = req.json()[ticker]
@@ -21,7 +25,7 @@ def get_stock_price(ticker: str):
 
 
 def get_option_price(ticker: str, strike: str, con_type: str, date: str):
-    req_url = f"https://api.tdameritrade.com/v1/marketdata/chains?apikey={api_key}" \
+    req_url = f"https://api.tdameritrade.com/v1/marketdata/chains?apikey={api_key[0]}" \
               f"&symbol={ticker}&contractType={con_type}&strike={strike}&fromDate={date}&toDate={date}"
 
     req = requests.get(req_url)

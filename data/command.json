@@ -1,0 +1,116 @@
+{
+  "": {
+    "desc": "",
+    "para": ""
+  },
+  "Setting Commands": {
+    "ping": {
+      "desc": "Get the current latency between the bot and Discord API",
+      "para": "-"
+    },
+    "check_setting": {
+      "desc": "Show the current setting that the bot is running on",
+      "para": "-"
+    },
+    "change_api_key": {
+      "desc": "Change the TD Ameritrade API key that is been used",
+      "para": "new_key: The new TD Ameritrade API key that you want to use"
+    },
+    "change_noti_webhook": {
+      "desc": "Change the Discord webhook where the notification is been sent to",
+      "para": "new_webhook: The new discord webhook that you want to use"
+    },
+    "add_notify_channel": {
+      "desc": "Add a channel to the notification list (Currently channel notifying is not enabled)",
+      "para": "channel_id: The channel id that you want to add"
+    },
+    "remove_noti_channel": {
+      "desc": "Remove a channel to from the notification list",
+      "para": "channel_id: The channel id that you want to remove"
+    },
+    "add_mention_user": {
+      "desc": "Add an user to the notification list",
+      "para": "user_id: The user id that you want to add to the notification list, should be all numbers"
+    },
+    "remove_mention_user": {
+      "desc": "Remove an user to the notification list",
+      "para": "user_id: The user id that you want to remove from the notification list, should be all numbers"
+    },
+    "add_mention_role": {
+      "desc": "Add a role to the notification list",
+      "para": "role_id: The role id that you want to add"
+    },
+    "remove_mention_role": {
+      "desc": "Remove a role from the notification list",
+      "para": "role_id: The role id that you want to remove"
+    },
+    "change_check_interval": {
+      "desc": "Change the wait time on each check for the monitoring task",
+      "para": "check_interval: The new wait time that you want (in sec)."
+    }
+  },
+  "Data Management Commands": {
+    "check_monitoring": {
+      "desc": "Show task that has been added to the monitor list (might not be loaded)",
+      "para": "-"
+    },
+    "add_stock_task": {
+      "desc": "Add a stock monitoring task to the monitoring list (task will need to be reloaded and start)",
+      "para": "price_target: When the stock hits (over/under) this price, the bot will notify\nover_under: You need to put *over* if you want the bot to notify when the price hit over price target, and *under* otherwise\nsymbol: The symbol of the ticker"
+    },
+    "add_option_task": {
+      "desc": "Add an option monitoring task to the monitoring list (task will need to be reloaded and start)",
+      "para": "price_target: When the option price hits (over/under) this price, the bot will notify\nover_under: You need to put *over* if you want the bot to notify when the price hit over price target, and *under* otherwise\nsymbol: The symbol of the ticker\ncon_type: Call or Put\nstrike: The strike of the contract\ndate: Expiration date of the contract"
+    },
+    "remove_all_task": {
+      "desc": "Remove all task from the database",
+      "para": "-"
+    },
+    "remove_symbol_monitor": {
+      "desc": "Remove all task for a specific ticker",
+      "para": "symbol: The symbol of the ticker"
+    },
+    "remove_stock_task": {
+      "desc": "Remove a specific stock monitoring task",
+      "para": "price_target: The price target of the task when added\nover_under: Over/Under\nsymbol: The symbol of the ticker"
+    },
+    "remove_option_task": {
+      "desc": "Remove an specific option monitoring task",
+      "para": "price_target: The price target of the task when added\nover_under: Over/Under\nsymbol: The symbol of the ticker\ncon_type: Call or Put\nstrike: The strike of the contract\ndate: Expiration date of the contract"
+    }
+  },
+  "Task Commands": {
+    "show_loaded_task": {
+      "desc": "Show all task that has been loaded and can be start",
+      "para": "-"
+    },
+    "show_running_task": {
+      "desc": "Show all task that are currently running",
+      "para": "-"
+    },
+    "reload_task": {
+      "desc": "Reload all task with the updated data",
+      "para": "-"
+    },
+    "restart_all_task": {
+      "desc": "Restart all running task with the updated data",
+      "para": "-"
+    },
+    "start_all_task": {
+      "desc": "Start all task that are idle",
+      "para": "-"
+    },
+    "start_task": {
+      "desc": "Start a specific task",
+      "para": "task_num: The task number of the task you want to start"
+    },
+    "stop_all_task": {
+      "desc": "Stop all running task",
+      "para": "-"
+    },
+    "stop_task": {
+      "desc": "Stop a specific task from running",
+      "para": "task_num: The task number of the task you want to stop"
+    }
+  }
+}

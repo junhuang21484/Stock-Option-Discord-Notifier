@@ -141,6 +141,14 @@ async def command_reload_task(ctx: lightbulb.Context):
 
 
 @plugin.command
+@lightbulb.command("restart_all_task", "Restart all running task with updated info")
+@lightbulb.implements(lightbulb.SlashCommand)
+async def command_restart_task(ctx: lightbulb.Context):
+    task_manger.restart_task()
+    await ctx.respond("All task restarted")
+
+
+@plugin.command
 @lightbulb.command("start_all_task", "Start all loaded task")
 @lightbulb.implements(lightbulb.SlashCommand)
 async def command_start_all_task(ctx: lightbulb.Context):

@@ -1,6 +1,6 @@
 import requests
 
-from td_helper import check_api_key
+from td_helper import check_api_key, reload_key
 import lightbulb
 import hikari
 import json
@@ -51,6 +51,7 @@ async def command_change_api_key(ctx: lightbulb.Context):
 
     setting_data["TD_SETTING"]["api_key"] = new_key
     update_data()
+    reload_key()
     await ctx.respond(f"The api key has now been changed to ||{new_key}||")
 
 
